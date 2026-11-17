@@ -44,15 +44,13 @@ XGBoost	SMOTE	87.0%	75.0%	0.8714
 Conclusion:
 The XGBoost (SMOTE) model is the winning architecture for a real-world banking scenario. By boosting the Recall to 87%, the system successfully flags a significantly higher number of actual fraudulent transactions. While the Precision slightly drops to 75% (meaning a few false alarms), the cost of sending automated verification SMS to clients is vastly lower than the financial liability of missing a fraudulent transaction.
 
-⚙️ Installation & Usage
-1. Clone the repository and navigate to the project directory:
+## ⚙️ Installation & Usage
 
+**1. Clone the repository and navigate to the project directory:**
 ```bash
-git clone [https://github.com/erenonder35/credit-card-fraud-detection.git](https://github.com/erenonder35/credit-card-fraud-detection.git)
+git clone https://github.com/erenonder35/credit-card-fraud-detection.git
 cd credit-card-fraud-detection
 2. Set up the virtual environment and install dependencies:
-
-Bash
 python -m venv venv
 # On Windows:
 .\venv\Scripts\activate
@@ -61,10 +59,14 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
-pip install -r requirements.txt
 3. Download the Data:
-Download the creditcard.csv file from Kaggle and place it inside the data/ directory.
+Since the dataset is too large for GitHub, you need to download it manually:
 
+Create a folder named data in the root directory.
+
+Download the creditcard.csv file from Kaggle.
+
+Place the downloaded CSV file inside the newly created data/ directory.
 4. Run the Pipeline:
 Execute the evaluation script. It will automatically call the preprocessing and training modules.
 
