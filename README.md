@@ -48,9 +48,9 @@ The XGBoost (SMOTE) model is the winning architecture for a real-world banking s
 
 **1. Clone the repository and navigate to the project directory:**
 ```bash
-git clone https://github.com/erenonder35/credit-card-fraud-detection.git
-cd credit-card-fraud-detection
-2. Set up the virtual environment and install dependencies:
+git clone [https://github.com/erenonder35/credit-card-fraud-detection.git](https://github.com/erenonder35/credit-card-fraud-detection.git)
+**2. Set up the virtual environment and install dependencies:**
+```bash
 python -m venv venv
 # On Windows:
 .\venv\Scripts\activate
@@ -58,18 +58,13 @@ python -m venv venv
 source venv/bin/activate
 
 pip install -r requirements.txt
-
-3. Download the Data:
+**3. Download the Data:**
 Since the dataset is too large for GitHub, you need to download it manually:
-
-Create a folder named data in the root directory.
-
-Download the creditcard.csv file from Kaggle.
-
-Place the downloaded CSV file inside the newly created data/ directory.
-4. Run the Pipeline:
+- Create a folder named `data` in the root directory.
+- Download the `creditcard.csv` file from Kaggle ([https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)).
+- Place the downloaded CSV file inside the newly created `data/` directory.
+**4. Run the Pipeline:**
 Execute the evaluation script. It will automatically call the preprocessing and training modules.
-
-Bash
+```bash
 python src/evaluation.py
 Developed by Eren Önder
