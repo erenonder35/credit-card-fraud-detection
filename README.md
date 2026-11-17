@@ -48,7 +48,9 @@ The XGBoost (SMOTE) model is the winning architecture for a real-world banking s
 
 **1. Clone the repository and navigate to the project directory:**
 ```bash
-git clone [https://github.com/erenonder35/credit-card-fraud-detection.git](https://github.com/erenonder35/credit-card-fraud-detection.git)
+git clone https://github.com/erenonder35/credit-card-fraud-detection.git
+cd credit-card-fraud-detection
+```
 **2. Set up the virtual environment and install dependencies:**
 ```bash
 python -m venv venv
@@ -58,6 +60,7 @@ python -m venv venv
 source venv/bin/activate
 
 pip install -r requirements.txt
+```
 **3. Download the Data:**
 Since the dataset is too large for GitHub, you need to download it manually:
 - Create a folder named `data` in the root directory.
@@ -67,4 +70,5 @@ Since the dataset is too large for GitHub, you need to download it manually:
 Execute the evaluation script. It will automatically call the preprocessing and training modules.
 ```bash
 python src/evaluation.py
+```
 Developed by Eren Önder
