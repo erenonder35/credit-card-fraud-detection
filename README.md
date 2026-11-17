@@ -41,6 +41,7 @@ The models were evaluated based on their ability to minimize financial loss (Hig
 Model	Technique	Recall (Fraud Caught)	Precision	PR-AUC
 Random Forest	Class Weights	79.0%	91.0%	0.8666
 XGBoost	SMOTE	87.0%	75.0%	0.8714
+```
 Conclusion:
 The XGBoost (SMOTE) model is the winning architecture for a real-world banking scenario. By boosting the Recall to 87%, the system successfully flags a significantly higher number of actual fraudulent transactions. While the Precision slightly drops to 75% (meaning a few false alarms), the cost of sending automated verification SMS to clients is vastly lower than the financial liability of missing a fraudulent transaction.
 
@@ -51,6 +52,7 @@ The XGBoost (SMOTE) model is the winning architecture for a real-world banking s
 git clone https://github.com/erenonder35/credit-card-fraud-detection.git
 cd credit-card-fraud-detection
 ```
+
 **2. Set up the virtual environment and install dependencies:**
 ```bash
 python -m venv venv
@@ -66,6 +68,7 @@ Since the dataset is too large for GitHub, you need to download it manually:
 - Create a folder named `data` in the root directory.
 - Download the `creditcard.csv` file from Kaggle ([https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)).
 - Place the downloaded CSV file inside the newly created `data/` directory.
+
 **4. Run the Pipeline:**
 Execute the evaluation script. It will automatically call the preprocessing and training modules.
 ```bash
